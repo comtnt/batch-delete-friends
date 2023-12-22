@@ -1,0 +1,24 @@
+.hidden {
+  display: none;
+}
+
+.icon {
+  display: block;
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+  -webkit-mask: url(https://img.icons8.com/?id=85081&format=png&size=100&name=icons8-%E5%9E%83%E5%9C%BE-100.png)
+    no-repeat center;
+  background-color: #c8aa6e;
+  -webkit-mask-size: 18px;
+  &:hover {
+    background-color: #f0e6d2;
+  }
+
+  &Hidden {
+    @extend .icon;
+    -webkit-mask: url(https://img.icons8.com/material-outlined/24/null/hide.png)
+      no-repeat center;
+    -webkit-mask-size: 18px;
+  }
+}
